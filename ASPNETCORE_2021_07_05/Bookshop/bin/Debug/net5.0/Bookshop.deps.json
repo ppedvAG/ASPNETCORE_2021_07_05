@@ -33,6 +33,7 @@
     ".NETCoreApp,Version=v5.0": {
       "Bookshop/1.0.0": {
         "dependencies": {
+          "DependecyInjectionSample": "1.0.0",
           "Microsoft.AspNetCore.Antiforgery": "5.0.0.0",
           "Microsoft.AspNetCore.Authentication.Abstractions": "5.0.0.0",
           "Microsoft.AspNetCore.Authentication.Cookies": "5.0.0.0",
@@ -322,6 +323,14 @@
         },
         "compile": {
           "Bookshop.dll": {}
+        }
+      },
+      "DependecyInjectionSample/1.0.0": {
+        "runtime": {
+          "DependecyInjectionSample.dll": {}
+        },
+        "compile": {
+          "DependecyInjectionSample.dll": {}
         }
       },
       "Microsoft.AspNetCore.Antiforgery/5.0.0.0": {
@@ -2026,6 +2035,11 @@
   },
   "libraries": {
     "Bookshop/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "DependecyInjectionSample/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

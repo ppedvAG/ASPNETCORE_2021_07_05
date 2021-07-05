@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Bookshop.Models;
+using DependecyInjectionSample;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.Extensions.Configuration;
@@ -19,13 +20,21 @@ namespace Bookshop.Pages.Modul001
 
         private readonly SampleWebSettings _sampleWebSettings;
 
+        private readonly ICarService _carService;
+
+        private readonly ICar _funCar; 
+
         //ctor + tab + tab -> Konstruktor
-        public ReadConfigurationSampleModel(IConfiguration configuration, IOptions<SampleWebSettings> settingOptions)
+        public ReadConfigurationSampleModel(IConfiguration configuration, IOptions<SampleWebSettings> settingOptions, ICarService carService, ICar car)
         {
             _configuration = configuration;
             _positionOptions = new();
 
             _sampleWebSettings = settingOptions.Value;
+            _carService = carService;
+
+            _funCar = car;
+
         }
 
 

@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using DependecyInjectionSample;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.Extensions.Logging;
 using System;
@@ -11,8 +12,9 @@ namespace Bookshop.Pages
     public class IndexModel : PageModel
     {
         private readonly ILogger<IndexModel> _logger;
+        private readonly ICar _car; 
 
-        public IndexModel(ILogger<IndexModel> logger) //ILogger ist im IOC Container hinterlegt 
+        public IndexModel(ILogger<IndexModel> logger, ICar car) //ILogger ist im IOC Container hinterlegt 
         {
             _logger = logger;
         }

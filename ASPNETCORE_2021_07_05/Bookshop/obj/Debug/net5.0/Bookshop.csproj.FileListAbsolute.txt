@@ -43,3 +43,5 @@ C:\Aktueller Kurs\ASPNETCORE_2021_07_05\ASPNETCORE_2021_07_05\Bookshop\obj\Debug
 C:\Aktueller Kurs\ASPNETCORE_2021_07_05\ASPNETCORE_2021_07_05\Bookshop\obj\Debug\net5.0\Bookshop.csproj.CopyComplete
 C:\Aktueller Kurs\ASPNETCORE_2021_07_05\ASPNETCORE_2021_07_05\Bookshop\obj\Debug\net5.0\Bookshop.csproj.AssemblyReference.cache
 C:\Aktueller Kurs\ASPNETCORE_2021_07_05\ASPNETCORE_2021_07_05\Bookshop\bin\Debug\net5.0\samplewebsettings.json
+C:\Aktueller Kurs\ASPNETCORE_2021_07_05\ASPNETCORE_2021_07_05\Bookshop\bin\Debug\net5.0\DependecyInjectionSample.dll
+C:\Aktueller Kurs\ASPNETCORE_2021_07_05\ASPNETCORE_2021_07_05\Bookshop\bin\Debug\net5.0\DependecyInjectionSample.pdb

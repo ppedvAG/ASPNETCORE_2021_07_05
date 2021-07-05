@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    "net5.0": {}
+    "net5.0": {
+      "DependecyInjectionSample/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/DependecyInjectionSample.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DependecyInjectionSample.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "DependecyInjectionSample/1.0.0": {
+      "type": "project",
+      "path": "../DependecyInjectionSample/DependecyInjectionSample.csproj",
+      "msbuildProject": "../DependecyInjectionSample/DependecyInjectionSample.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net5.0": []
+    "net5.0": [
+      "DependecyInjectionSample >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\kw4\\.nuget\\packages\\": {},
@@ -40,7 +59,11 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Aktueller Kurs\\ASPNETCORE_2021_07_05\\ASPNETCORE_2021_07_05\\DependecyInjectionSample\\DependecyInjectionSample.csproj": {
+              "projectPath": "C:\\Aktueller Kurs\\ASPNETCORE_2021_07_05\\ASPNETCORE_2021_07_05\\DependecyInjectionSample\\DependecyInjectionSample.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

@@ -1,0 +1,10 @@
+#### Internet Ressourcen (Knowledge)
+
+##### Interfaces Grundlagen
+
+- https://docs.microsoft.com/de-de/dotnet/csharp/language-reference/keywords/interface
+
+Dependency Injections (DI)
+- https://docs.microsoft.com/de-de/dotnet/core/extensions/dependency-injection
+
+- Depenency Injections in Razor Pages -> https://docs.microsoft.com/de-de/aspnet/core/fundamentals/dependency-injection?view=aspnetcore-5.0

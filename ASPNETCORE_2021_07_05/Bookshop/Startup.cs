@@ -1,4 +1,5 @@
 using Bookshop.Models;
+using DependecyInjectionSample;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -26,15 +27,25 @@ namespace Bookshop
         {
             //Welche Technologien werden hinzugefügt (ASP.NET Core Feature (Session-Handling) oder drittanbieter wie DevExpress) 
             services.AddRazorPages(); //Bedeutet, wir verwenden Razor Pages + wir benötigen ein Pages-Verzeichnis
+
             #region andere Alternativen  zu AddRazorPages
             //services.AddControllersWithViews(); //Bedeutet, wir verwenden zusätzlich noch MVC
             //services.AddMvc(); // Intern wird AddRazorPages + AddControllersWithViews verwendet 
             //services.AddControllers(); //WebAPI 
             //services.AddSession(); //Session Handling wurde hinzugenommen 
-
+            //services.AddDbContext -> Intern wird services.AddScoped<DbContext> aufgerufen
             #endregion
 
+            //Singleton -> Einmal verfügbar, muss nicht wieder instanziiert werden
+            services.AddSingleton<ICarService, CarService>(); //CarService - Klasse wurde als Singleton implementiert. 
+            //Alternative Schreibweise
+            services.AddSingleton(typeof(ICarService), typeof(CarService));
+            services.AddSingleton<ICar, Car>();
+            services.AddSingleton<ICar, MockCar>(); //Car wird jetzt nicht mehr verwendet, statt dessen MockCar
 
+            // Transient und Scope sind Request bezogene Lebenszeiten -> werden immer mal wieder erstellt. 
+            services.AddTransient<ICarService, CarService>();
+            services.AddScoped<ICarService, CarService>();
 
             services.Configure<SampleWebSettings>(Configuration);
         }
