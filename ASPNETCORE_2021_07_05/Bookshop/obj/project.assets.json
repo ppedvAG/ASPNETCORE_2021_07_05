@@ -34,9 +34,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Aktueller Kurs\\ASPNETCORE_2021_07_05\\ASPNETCORE_2021_07_05\\Bookshop\\Bookshop.csproj",
-      "projectName": "Bookshop",
-      "projectPath": "C:\\Aktueller Kurs\\ASPNETCORE_2021_07_05\\ASPNETCORE_2021_07_05\\Bookshop\\Bookshop.csproj",
+      "projectUniqueName": "C:\\Aktueller Kurs\\ASPNETCORE_2021_07_05\\ASPNETCORE_2021_07_05\\Bookshop\\RazorPageKurs.csproj",
+      "projectName": "RazorPageKurs",
+      "projectPath": "C:\\Aktueller Kurs\\ASPNETCORE_2021_07_05\\ASPNETCORE_2021_07_05\\Bookshop\\RazorPageKurs.csproj",
       "packagesPath": "C:\\Users\\kw4\\.nuget\\packages\\",
       "outputPath": "C:\\Aktueller Kurs\\ASPNETCORE_2021_07_05\\ASPNETCORE_2021_07_05\\Bookshop\\obj\\",
       "projectStyle": "PackageReference",

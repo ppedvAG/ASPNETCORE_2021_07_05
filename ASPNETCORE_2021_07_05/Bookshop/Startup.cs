@@ -40,7 +40,7 @@ namespace Bookshop
             services.AddSingleton<ICarService, CarService>(); //CarService - Klasse wurde als Singleton implementiert. 
             //Alternative Schreibweise
             services.AddSingleton(typeof(ICarService), typeof(CarService));
-            services.AddSingleton<ICar, Car>();
+            //services.AddSingleton<ICar, Car>();
             services.AddSingleton<ICar, MockCar>(); //Car wird jetzt nicht mehr verwendet, statt dessen MockCar
 
             // Transient und Scope sind Request bezogene Lebenszeiten -> werden immer mal wieder erstellt. 

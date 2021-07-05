@@ -13,7 +13,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Dependecy Injections", "Dep
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DependecyInjectionSample", "DependecyInjectionSample\DependecyInjectionSample.csproj", "{84DE95DC-F3CC-408A-9749-2A36127DC6E7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bookshop", "Bookshop\Bookshop.csproj", "{B8B400BC-EB01-4E13-8A96-4F50E8E9F602}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RazorPageKurs", "Bookshop\RazorPageKurs.csproj", "{B8B400BC-EB01-4E13-8A96-4F50E8E9F602}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DefaultWebForms", "DefaultWebForms\DefaultWebForms.csproj", "{71281BBC-BA92-4B92-B269-1D71394741F1}"
 EndProject

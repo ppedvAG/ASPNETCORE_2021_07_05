@@ -1,0 +1,21 @@
+﻿@page "{handler?}"
+
+@model Bookshop.Pages.Modul002.CalcModel
+@{
+}
+
+
+<p>Call mit Handler via Browser ->https://localhost:44375/Modul002/calc?handler=Hannes</p>
+
+
+<h1>Easy Calculator</h1>
+
+<form method="post">
+    <input name="eins" /> <br />
+    <input name="zwei" /> <br />
+    <button type="submit">Add</button>
+</form>
+
+
+<p>Ausgabe Ergebnis: @Model.Ergebnis </p>
+

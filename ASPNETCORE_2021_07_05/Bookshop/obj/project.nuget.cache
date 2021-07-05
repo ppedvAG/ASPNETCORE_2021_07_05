@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "IYwKWBjQGm/76sdB5YXr9QqK4NJVY0mXKS88/pP87t8KkWCIn3t/nPKkU8zind1gk4d6OmCKp4UsB1r4LlSDnA==",
+  "dgSpecHash": "xPbNguwzStWKPKyzhPpK2r9i+b8klndB3qAQplStmo+R1DeAGQi60LkT3Vml4lz970WhHq9KLSd9Z/6dY6IfWA==",
   "success": true,
-  "projectFilePath": "C:\\Aktueller Kurs\\ASPNETCORE_2021_07_05\\ASPNETCORE_2021_07_05\\Bookshop\\Bookshop.csproj",
+  "projectFilePath": "C:\\Aktueller Kurs\\ASPNETCORE_2021_07_05\\ASPNETCORE_2021_07_05\\Bookshop\\RazorPageKurs.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

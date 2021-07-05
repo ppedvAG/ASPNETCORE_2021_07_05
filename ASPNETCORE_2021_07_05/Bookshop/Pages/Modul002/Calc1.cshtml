@@ -1,0 +1,19 @@
+﻿@page
+@model RazorPageKurs.Pages.Modul002.Calc1Model
+@{
+}
+
+
+<h1>Easy Calculator 2</h1>
+
+<form method="post">
+    <input name="eins" /> <br />
+    <input name="zwei" /> <br />
+
+
+    <input type="submit" asp-page-handler="plus" value="+" />
+    <input type="submit" asp-page-handler="minus" value="-" />
+</form>
+
+
+<p>Ausgabe Ergebnis: @Model.Ergebnis </p>
