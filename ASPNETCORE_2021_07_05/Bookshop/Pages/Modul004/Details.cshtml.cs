@@ -28,12 +28,14 @@ namespace RazorPageKurs.Pages.Modul004
                 return NotFound();
             }
 
+            //Wird befüllt, bevor Page aufgerufen wird
             Movie = await _context.Movie.FirstOrDefaultAsync(m => m.Id == id);
 
             if (Movie == null)
             {
                 return NotFound();
             }
+
             return Page();
         }
     }

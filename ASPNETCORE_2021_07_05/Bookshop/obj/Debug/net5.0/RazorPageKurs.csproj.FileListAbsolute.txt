@@ -459,3 +459,5 @@ C:\Aktueller Kurs\ASPNETCORE_2021_07_05\ASPNETCORE_2021_07_05\Bookshop\obj\Debug
 C:\Aktueller Kurs\ASPNETCORE_2021_07_05\ASPNETCORE_2021_07_05\Bookshop\obj\Debug\net5.0\Razor\Pages\Modul004\Details.cshtml.g.cs
 C:\Aktueller Kurs\ASPNETCORE_2021_07_05\ASPNETCORE_2021_07_05\Bookshop\obj\Debug\net5.0\Razor\Pages\Modul004\Edit.cshtml.g.cs
 C:\Aktueller Kurs\ASPNETCORE_2021_07_05\ASPNETCORE_2021_07_05\Bookshop\obj\Debug\net5.0\Razor\Pages\Modul004\Index.cshtml.g.cs
+C:\Aktueller Kurs\ASPNETCORE_2021_07_05\ASPNETCORE_2021_07_05\Bookshop\bin\Debug\net5.0\libman.json
+C:\Aktueller Kurs\ASPNETCORE_2021_07_05\ASPNETCORE_2021_07_05\Bookshop\obj\Debug\net5.0\Razor\Pages\Modul005\CustomizeHtmlTagHelper.cshtml.g.cs

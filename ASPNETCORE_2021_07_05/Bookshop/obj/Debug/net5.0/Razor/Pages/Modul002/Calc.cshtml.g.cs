@@ -19,9 +19,23 @@ using Bookshop;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 2 "C:\Aktueller Kurs\ASPNETCORE_2021_07_05\ASPNETCORE_2021_07_05\Bookshop\Pages\_ViewImports.cshtml"
+using RazorPageKurs.TagHelpers;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 3 "C:\Aktueller Kurs\ASPNETCORE_2021_07_05\ASPNETCORE_2021_07_05\Bookshop\Pages\_ViewImports.cshtml"
+using RazorPageKurs.Models;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorCompiledItemMetadataAttribute("RouteTemplate", "{handler?}")]
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"e6b02f9c42f91efb3512ce119f7f7e0c5d48c492", @"/Pages/Modul002/Calc.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"29efad2fc0e7c6eee2d9b7b5a08c899173249946", @"/Pages/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"e6216e1d00ca2c5deab650dd12336004ad20f7a5", @"/Pages/_ViewImports.cshtml")]
     public class Pages_Modul002_Calc : global::Microsoft.AspNetCore.Mvc.RazorPages.Page
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("method", "post", global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -52,7 +66,7 @@ using Bookshop;
         {
             WriteLiteral("\r\n");
             WriteLiteral("\r\n\r\n<p>Call mit Handler via Browser ->https://localhost:44375/Modul002/calc?handler=Hannes</p>\r\n\r\n\r\n<h1>Easy Calculator</h1>\r\n\r\n");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e6b02f9c42f91efb3512ce119f7f7e0c5d48c4923679", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e6b02f9c42f91efb3512ce119f7f7e0c5d48c4924095", async() => {
                 WriteLiteral("\r\n    <input name=\"eins\" /> <br />\r\n    <input name=\"zwei\" /> <br />\r\n    <button type=\"submit\">Add</button>\r\n");
             }
             );

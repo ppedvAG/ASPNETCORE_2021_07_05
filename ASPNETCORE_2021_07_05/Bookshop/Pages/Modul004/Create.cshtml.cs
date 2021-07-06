@@ -21,16 +21,19 @@ namespace RazorPageKurs.Pages.Modul004
 
         public IActionResult OnGet()
         {
+            // Wenn einige Properties befüllt werden müssen, dann hier!
             return Page();
         }
 
         [BindProperty]
         public Movie Movie { get; set; }
 
+        
+
         // To protect from overposting attacks, see https://aka.ms/RazorPagesCRUD
         public async Task<IActionResult> OnPostAsync()
         {
-            if (!ModelState.IsValid)
+            if (!ModelState.IsValid)  //Serverseitige Validierung
             {
                 return Page();
             }
