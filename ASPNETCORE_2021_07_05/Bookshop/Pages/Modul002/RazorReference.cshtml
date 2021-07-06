@@ -110,7 +110,7 @@
 
 @for (int y = 0; y < Model.People.Length; y++)
 {
-    var person = Model.People[y].;
+    var person = Model.People[y];
     <text>Name: @person.Name</text>
 }
 
@@ -179,7 +179,7 @@ else
     {
           new Person("Weston", 33),
           new Person("Johnathon", 41),
-                                                                    };
+                                                                                            };
 }
 
 @* 7.2.1    Die folgenden Schleifenanweisungen werden unterstützt: *@
@@ -304,3 +304,14 @@ finally
     Die @section-Anweisung wird in Verbindung mit MVC- und Razor Pages-Layouts verwendet, damit Ansichten Seiten Inhalte in verschiedenen Teilen
     der HTML-Seite rendern können. Weitere Informationen finden Sie unter Layout in ASP.NET Core.
 *@
+
+
+@section Scripts {
+    <script type="text/javascript" src="~/scripts/main.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            alert("Test");
+        });
+    </script>
+}

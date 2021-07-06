@@ -6,5 +6,9 @@
 
 Dependency Injections (DI)
 - https://docs.microsoft.com/de-de/dotnet/core/extensions/dependency-injection
-
 - Depenency Injections in Razor Pages -> https://docs.microsoft.com/de-de/aspnet/core/fundamentals/dependency-injection?view=aspnetcore-5.0
+- https://themesof.net/
+
+- https://devblogs.microsoft.com/aspnet/asp-net-core-updates-in-net-6-preview-5/
+
+

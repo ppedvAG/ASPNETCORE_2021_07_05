@@ -1,5 +1,4 @@
 ﻿using DependecyInjectionSample;
-using DependencyInjectionSampleLib;
 using Microsoft.Extensions.DependencyInjection;
 using System;
 
@@ -12,10 +11,10 @@ namespace ServiceCollectionAndServiceProviderSample
             //Definiton der Collection
             ServiceCollection serviceCollection = new ServiceCollection();
             
-            
-            
             //Hinzufügen von Objekten in den Container /Singleton / Scope / Transient
             serviceCollection.AddSingleton<ICar, MockCar>();
+            serviceCollection.AddScoped<ICar, MockCar>();
+            serviceCollection.AddTransient<ICar, MockCar>();
 
             //Am Ende wird die Reisetasche zugeschnürrt -> Ein ServiceProvider entseht 
             ServiceProvider provider = serviceCollection.BuildServiceProvider();

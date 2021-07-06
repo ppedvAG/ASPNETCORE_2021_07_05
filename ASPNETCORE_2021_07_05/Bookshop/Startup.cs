@@ -1,4 +1,4 @@
-using Bookshop.Models;
+ï»¿using Bookshop.Models;
 using DependecyInjectionSample;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -10,6 +10,9 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Westwind.AspNetCore.LiveReload;
+using Microsoft.EntityFrameworkCore;
+using RazorPageKurs.Data;
 
 namespace Bookshop
 {
@@ -25,18 +28,25 @@ namespace Bookshop
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services) //IOC - Container 
         {
-            //Welche Technologien werden hinzugefügt (ASP.NET Core Feature (Session-Handling) oder drittanbieter wie DevExpress) 
-            services.AddRazorPages(); //Bedeutet, wir verwenden Razor Pages + wir benötigen ein Pages-Verzeichnis
+            //Welche Technologien werden hinzugefï¿½gt (ASP.NET Core Feature (Session-Handling) oder drittanbieter wie DevExpress) 
+            services.AddRazorPages() //Bedeutet, wir verwenden Razor Pages + wir benï¿½tigen ein Pages-Verzeichnis
+                .AddRazorRuntimeCompilation(); //Wird fï¿½r LiveMiddleware Library benï¿½tigt -> WestWind
+
+
+            //services.AddRazorPages(config => 
+            //{ 
+               
+            //});
 
             #region andere Alternativen  zu AddRazorPages
-            //services.AddControllersWithViews(); //Bedeutet, wir verwenden zusätzlich noch MVC
+            //services.AddControllersWithViews(); //Bedeutet, wir verwenden zusï¿½tzlich noch MVC
             //services.AddMvc(); // Intern wird AddRazorPages + AddControllersWithViews verwendet 
             //services.AddControllers(); //WebAPI 
             //services.AddSession(); //Session Handling wurde hinzugenommen 
             //services.AddDbContext -> Intern wird services.AddScoped<DbContext> aufgerufen
             #endregion
 
-            //Singleton -> Einmal verfügbar, muss nicht wieder instanziiert werden
+            //Singleton -> Einmal verfï¿½gbar, muss nicht wieder instanziiert werden
             services.AddSingleton<ICarService, CarService>(); //CarService - Klasse wurde als Singleton implementiert. 
             //Alternative Schreibweise
             services.AddSingleton(typeof(ICarService), typeof(CarService));
@@ -48,6 +58,18 @@ namespace Bookshop
             services.AddScoped<ICarService, CarService>();
 
             services.Configure<SampleWebSettings>(Configuration);
+            //services.AddLiveReload();
+
+
+            services.AddLiveReload(config =>
+            {
+                // optional - use config instead
+                //config.LiveReloadEnabled = true;
+                //config.FolderToMonitor = Path.GetFullname(Path.Combine(Env.ContentRootPath,"..")) ;
+            });
+
+            services.AddDbContext<MovieDbContext>(options =>
+                    options.UseSqlServer(Configuration.GetConnectionString("MovieDbContext")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -57,6 +79,7 @@ namespace Bookshop
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
+                //app.UseLiveReload(); //Ist nur fï¿½r Entwickler
             }
             else
             {
@@ -76,7 +99,7 @@ namespace Bookshop
 
             app.UseEndpoints(endpoints =>
             {
-                endpoints.MapRazorPages(); //Endpoint für Razor Pages -> Request findet seine RazorPage - Seite
+                endpoints.MapRazorPages(); //Endpoint fï¿½r Razor Pages -> Request findet seine RazorPage - Seite
             });
         }
     }

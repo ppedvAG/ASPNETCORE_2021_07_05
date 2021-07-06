@@ -11,9 +11,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Dependecy Injections", "Dependecy Injections", "{97A1B052-9D05-4313-9564-6CF522497FE3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DependecyInjectionSample", "DependecyInjectionSample\DependecyInjectionSample.csproj", "{84DE95DC-F3CC-408A-9749-2A36127DC6E7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DependecyInjectionSample", "DependecyInjectionSample\DependecyInjectionSample.csproj", "{84DE95DC-F3CC-408A-9749-2A36127DC6E7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RazorPageKurs", "Bookshop\RazorPageKurs.csproj", "{B8B400BC-EB01-4E13-8A96-4F50E8E9F602}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RazorPageKurs", "Bookshop\RazorPageKurs.csproj", "{B8B400BC-EB01-4E13-8A96-4F50E8E9F602}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DefaultWebForms", "DefaultWebForms\DefaultWebForms.csproj", "{71281BBC-BA92-4B92-B269-1D71394741F1}"
 EndProject

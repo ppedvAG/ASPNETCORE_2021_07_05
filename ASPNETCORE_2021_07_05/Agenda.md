@@ -2,26 +2,29 @@
 
 ##### ASP.NET vs. ASP.NET Core
 
-- [ ] Dependency Injection
-- [ ] Visual Studio Installation </br>
-- [ ] Umgebung und Werkzeuge
-- [ ] Das ASP.NET Core-Gerüst
-- [ ] Startup-Klasse
-- [ ] Layouts
+- [x] Dependency Injection
+- [x] Visual Studio Installation </br>
+- [x] Umgebung und Werkzeuge
+- [x] Das ASP.NET Core-Gerüst
+- [x] Startup-Klasse
+- [O] Layouts
+
+- [ ] View Components
+- [ ] Lokalisierung
+- [x] Konfiguration
+- [x] Logging
+- [x] Fehlerbehandlung
+
+- [ ] Sicherheit
+- [X] Model-View-Controller (MVC) Pattern  (wurde abgewählt)
+
 - [ ] Middleware
 - [ ] Routing
-- [ ] View Components
-- [ ] Konfiguration
-- [ ] Logging
-- [ ] Fehlerbehandlung
-- [ ] Lokalisierung
-- [ ] Sicherheit
-- [ ] Model-View-Controller (MVC) Pattern
 
 ##### Die Präsentationsschicht
 - [ ] RazorEngine
 - [ ] Tag Helpers
-- [ ] Controller und Views
+- [X] Controller und Views (wurde abgewählt)
 - [ ] Datenmodellierung mit Entity Framework Core
 - [ ] Einführung Entity Framework Core
 - [ ] Domänenmodell
