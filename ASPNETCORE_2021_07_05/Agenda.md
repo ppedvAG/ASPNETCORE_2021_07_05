@@ -20,6 +20,7 @@
 
 - [ ] Middleware
 - [ ] Routing
+- [ ] Async/Await Pattern
 
 ##### Die Präsentationsschicht
 - [ ] RazorEngine

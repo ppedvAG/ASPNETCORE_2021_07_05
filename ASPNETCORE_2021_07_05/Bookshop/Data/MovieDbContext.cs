@@ -7,13 +7,14 @@ using RazorPageKurs.Models;
 
 namespace RazorPageKurs.Data
 {
-    public class MovieDbContext : DbContext
+    public class MovieDbContext : DbContext //EFCore 
     {
         public MovieDbContext (DbContextOptions<MovieDbContext> options)
             : base(options)
         {
         }
 
+        //DbSet sind Tabelle als Objekte abgebildet
         public DbSet<RazorPageKurs.Models.Movie> Movie { get; set; }
     }
 }

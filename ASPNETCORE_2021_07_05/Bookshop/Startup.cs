@@ -61,15 +61,12 @@ namespace Bookshop
             //services.AddLiveReload();
 
 
-            services.AddLiveReload(config =>
-            {
-                // optional - use config instead
-                //config.LiveReloadEnabled = true;
-                //config.FolderToMonitor = Path.GetFullname(Path.Combine(Env.ContentRootPath,"..")) ;
-            });
-
+            //Intern wird in AddDbContext AddScoped 
             services.AddDbContext<MovieDbContext>(options =>
-                    options.UseSqlServer(Configuration.GetConnectionString("MovieDbContext")));
+            {
+                options.UseInMemoryDatabase("MovieDB");
+            });
+           
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
