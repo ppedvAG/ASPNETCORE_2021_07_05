@@ -1,0 +1,12 @@
+C:\Aktueller Kurs\ASPNETCORE_2021_07_05\ASPNETCORE_2021_07_05\HelloWebAPI.Shared\bin\Debug\net5.0\HelloWebAPI.Shared.deps.json
+C:\Aktueller Kurs\ASPNETCORE_2021_07_05\ASPNETCORE_2021_07_05\HelloWebAPI.Shared\bin\Debug\net5.0\HelloWebAPI.Shared.dll
+C:\Aktueller Kurs\ASPNETCORE_2021_07_05\ASPNETCORE_2021_07_05\HelloWebAPI.Shared\bin\Debug\net5.0\ref\HelloWebAPI.Shared.dll
+C:\Aktueller Kurs\ASPNETCORE_2021_07_05\ASPNETCORE_2021_07_05\HelloWebAPI.Shared\bin\Debug\net5.0\HelloWebAPI.Shared.pdb
+C:\Aktueller Kurs\ASPNETCORE_2021_07_05\ASPNETCORE_2021_07_05\HelloWebAPI.Shared\obj\Debug\net5.0\HelloWebAPI.Shared.csproj.AssemblyReference.cache
+C:\Aktueller Kurs\ASPNETCORE_2021_07_05\ASPNETCORE_2021_07_05\HelloWebAPI.Shared\obj\Debug\net5.0\HelloWebAPI.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Aktueller Kurs\ASPNETCORE_2021_07_05\ASPNETCORE_2021_07_05\HelloWebAPI.Shared\obj\Debug\net5.0\HelloWebAPI.Shared.AssemblyInfoInputs.cache
+C:\Aktueller Kurs\ASPNETCORE_2021_07_05\ASPNETCORE_2021_07_05\HelloWebAPI.Shared\obj\Debug\net5.0\HelloWebAPI.Shared.AssemblyInfo.cs
+C:\Aktueller Kurs\ASPNETCORE_2021_07_05\ASPNETCORE_2021_07_05\HelloWebAPI.Shared\obj\Debug\net5.0\HelloWebAPI.Shared.csproj.CoreCompileInputs.cache
+C:\Aktueller Kurs\ASPNETCORE_2021_07_05\ASPNETCORE_2021_07_05\HelloWebAPI.Shared\obj\Debug\net5.0\HelloWebAPI.Shared.dll
+C:\Aktueller Kurs\ASPNETCORE_2021_07_05\ASPNETCORE_2021_07_05\HelloWebAPI.Shared\obj\Debug\net5.0\ref\HelloWebAPI.Shared.dll
+C:\Aktueller Kurs\ASPNETCORE_2021_07_05\ASPNETCORE_2021_07_05\HelloWebAPI.Shared\obj\Debug\net5.0\HelloWebAPI.Shared.pdb

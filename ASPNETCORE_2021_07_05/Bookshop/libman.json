@@ -5,11 +5,18 @@
     {
       "library": "globalize@1.6.0",
       "destination": "wwwroot/lib/globalize/"
+    },
+    {
+      "library": "jquery-validation-globalize@0.1.1",
+      "destination": "wwwroot/lib/jquery-validation-globalize/"
+    },
+    {
+      "library": "@microsoft/signalr@latest",
+      "destination": "wwwroot/js/signalr",
+      "files": [
+        "dist/browser/signalr.js",
+        "dist/browser/signalr.min.js"
+      ]
     }
-  ,
-{
-  "library": "jquery-validation-globalize@0.1.1",
-  "destination": "wwwroot/lib/jquery-validation-globalize/"
-}
-]
+  ]
 }

@@ -17,16 +17,16 @@
 
 Mittwoch:
 - [x] Routing
-- [ ] Middleware
+- [x] Middleware
 - [x] View Components (Do) 
 - [x] Lokalisierung
-- [ ] Sicherheit (User Idenenty Library) (DO)
+- [x] Sicherheit (User Idenenty Library) (DO)
 - [x] State Management
-
 - [ ] Signal-R mit Razor Pages 
+
 - [ ] Create und Edit RazorPage all-in-one. -> .NET 6 Preview 4
 
-##### WebAPI (optional) 
+##### WebAPI
 - [ ] Kleiner Einblick
 - [ ] CRUD
 

@@ -16,6 +16,8 @@ using RazorPageKurs.Data;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using RazorPageKurs.Authorization;
+using RazorPageKurs.Hubs;
+using RazorPageKurs.Middleware;
 
 namespace RazorPageKurs
 {
@@ -118,6 +120,8 @@ namespace RazorPageKurs
             services.AddResponseCaching();
 
             //services.AddAuthentication();
+            services.AddSignalR();
+
 
         }
 
@@ -137,24 +141,33 @@ namespace RazorPageKurs
                 app.UseHsts(); //Aufsatz von Https
             }
 
-
             //Allgmein
             app.UseResponseCaching();
             app.UseHttpsRedirection(); //https 
             app.UseStaticFiles(); //wwwroot verzeichnis wird mitverwendet
-
             app.UseRouting(); //Routing
-
             app.UseAuthentication();
             app.UseAuthorization();
             app.UseSession();
             app.UseCookiePolicy();
 
 
+            AppDomain.CurrentDomain.SetData("BildVerzeichnis", env.WebRootPath);
+
+            #region Customize Middleware
+            
+            //Middleware wird aktiv, wenn im Request "imagegen" angegeben wird
+            app.MapWhen(context => context.Request.Path.ToString().Contains("imagegen"), subapp =>
+            {
+                subapp.UseThumbnailGen();
+            });
+            #endregion
+
             //Endpoints ist die letzte Zeile Code 
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapRazorPages(); //Endpoint f�r Razor Pages -> Request findet seine RazorPage - Seite
+                endpoints.MapHub<ChatHub>("/chatHub");
             });
         }
     }

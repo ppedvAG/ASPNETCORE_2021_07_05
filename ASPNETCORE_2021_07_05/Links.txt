@@ -12,3 +12,10 @@ Dependency Injections (DI)
 - https://devblogs.microsoft.com/aspnet/asp-net-core-updates-in-net-6-preview-5/
 
 
+
+
+
+
+https://docs.microsoft.com/de-de/aspnet/core/fundamentals/middleware/?view=aspnetcore-5.0
+
+https://www.google.de/search?q=middleware+vs+filters+asp.+net+core&sxsrf=ALeKk025e4idYFz7rX7mjDFne8cVMar75Q%3A1625668622431&source=hp&ei=DrzlYJqBGMCP1fAP8cCDyAM&iflsig=AINFCbYAAAAAYOXKHpA7oSRxTvMYLfRWafBo0KvcemZD&oq=Middleware+&gs_lcp=Cgdnd3Mtd2l6EAEYATIECCMQJzIECCMQJzIHCAAQhwIQFDIHCAAQhwIQFDIFCAAQywEyBQgAEMsBMgUIABDLATIFCAAQywEyAggAMgIIADoFCAAQsQM6CwgAELEDEMcBEKMCOggILhCxAxCDAToICAAQsQMQgwE6BggjECcQEzoECAAQQzoCCC46CggAELEDEIMBEEM6BwgjEOoCECc6BAguECc6BwgAELEDEEM6CAgAEMcBEK8BOgUILhCxAzoKCAAQhwIQsQMQFFCVAlijHWD4MmgDcAB4AIABb4gBkwmSAQQxMy4xmAEAoAEBqgEHZ3dzLXdperABCg&sclient=gws-wiz
