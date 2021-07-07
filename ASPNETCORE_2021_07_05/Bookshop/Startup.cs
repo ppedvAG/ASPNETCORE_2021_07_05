@@ -14,6 +14,8 @@ using Westwind.AspNetCore.LiveReload;
 using Microsoft.EntityFrameworkCore;
 using RazorPageKurs.Data;
 using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Authentication.Cookies;
+using RazorPageKurs.Authorization;
 
 namespace RazorPageKurs
 {
@@ -29,14 +31,27 @@ namespace RazorPageKurs
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services) //IOC - Container 
         {
-            services.AddRazorPages();
-
-            services.Configure<CookiePolicyOptions>(options =>
-            {
-                // This lambda determines whether user consent for non-essential cookies is needed for a given request.
-                options.CheckConsentNeeded = context => true;
-                options.MinimumSameSitePolicy = SameSiteMode.None;
+            services.AddRazorPages(options => {
+                //options.Conventions.AuthorizePage("/Contact");
+                //options.Conventions.AuthorizeFolder("/Private");
+                //options.Conventions.AllowAnonymousToPage("/Private/PublicPage");
+                //options.Conventions.AllowAnonymousToFolder("/Private/PublicPages");
+                options.Conventions.AuthorizePage("/Modul008/Index1", "Admin");
             });
+
+            services.AddAuthorization(options =>
+            {
+                options.AddPolicy("Admin", policy =>
+                    policy.Requirements.Add(new MinimumAgeRequirement(21)));
+            });
+
+
+            //services.Configure<CookiePolicyOptions>(options =>
+            //{
+            //    // This lambda determines whether user consent for non-essential cookies is needed for a given request.
+            //    options.CheckConsentNeeded = context => true;
+            //    options.MinimumSameSitePolicy = SameSiteMode.None;
+            //});
             #region 
             //BEISPIEL 1:
             //Page-Directory -> wird /Content Directory jetzt sein
@@ -102,6 +117,8 @@ namespace RazorPageKurs
 
             services.AddResponseCaching();
 
+            //services.AddAuthentication();
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -128,6 +145,7 @@ namespace RazorPageKurs
 
             app.UseRouting(); //Routing
 
+            app.UseAuthentication();
             app.UseAuthorization();
             app.UseSession();
             app.UseCookiePolicy();
