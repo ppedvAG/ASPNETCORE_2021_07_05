@@ -8,32 +8,39 @@
 - [x] Das ASP.NET Core-Gerüst
 - [x] Startup-Klasse
 - [O] Layouts
-
-- [ ] View Components
-- [ ] Lokalisierung
 - [x] Konfiguration
 - [x] Logging
 - [x] Fehlerbehandlung
-
-- [ ] Sicherheit
 - [X] Model-View-Controller (MVC) Pattern  (wurde abgewählt)
+- [X] Async/Await Pattern
 
-- [ ] Middleware
+
+Mittwoch:
 - [ ] Routing
-- [ ] Async/Await Pattern
+- [ ] Middleware
+- [ ] View Components (Do) 
+- [ ] Lokalisierung
+- [ ] Sicherheit (User Idenenty Library) (DO)
+- [ ] State Management
+- [ ] Create und Edit RazorPage all-in-one. -> .NET 6 Preview 4
 
-##### Die Präsentationsschicht
-- [ ] RazorEngine
-- [ ] Tag Helpers
-- [X] Controller und Views (wurde abgewählt)
-- [ ] Datenmodellierung mit Entity Framework Core
-- [ ] Einführung Entity Framework Core
-- [ ] Domänenmodell
-- [ ] Entitäten erstellen
-- [ ] Entity Framework Core in ASP.NET Core
-- [ ] Deployment von ASP.NET-Core-Applikationen
-
-##### WebAPI
+##### WebAPI (optional) 
 - [ ] Kleiner Einblick
 - [ ] CRUD
+
+##### Die Präsentationsschicht
+- [x] RazorEngine
+- [X] Tag Helpers
+- [X] Controller und Views (wurde abgewählt)
+- [x] Datenmodellierung (DataAnnoation) mit Entity Framework Core
+
+
+Mittwoch: (nicht alles in Scaffolded :-) 
+- [O] Einführung Entity Framework Core
+- [x] Domänenmodell
+- [x] Entitäten erstellen (mit Data Annotations)
+- [O] Entity Framework Core in ASP.NET Core
+
+
+
 

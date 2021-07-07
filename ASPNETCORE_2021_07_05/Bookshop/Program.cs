@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using Serilog;
 using System.IO;
 
-namespace Bookshop
+namespace RazorPageKurs
 {
     public class Program
     {

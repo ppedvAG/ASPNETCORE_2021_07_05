@@ -1,4 +1,4 @@
-﻿using Bookshop.Models;
+﻿using RazorPageKurs.Models;
 using DependecyInjectionSample;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -14,7 +14,7 @@ using Westwind.AspNetCore.LiveReload;
 using Microsoft.EntityFrameworkCore;
 using RazorPageKurs.Data;
 
-namespace Bookshop
+namespace RazorPageKurs
 {
     public class Startup
     {
@@ -28,14 +28,32 @@ namespace Bookshop
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services) //IOC - Container 
         {
+            //services.AddRazorPages();
+            #region 
+            //BEISPIEL 1:
+            //Page-Directory -> wird /Content Directory jetzt sein
+            //services.AddRazorPages().AddRazorPagesOptions(options =>
+            //{
+            //    options.RootDirectory = "/Content";
+            //});
+
+
+            //BEISPIEL 2:
+            services.AddRazorPages()
+                .AddRazorPagesOptions(options =>
+                {
+                    options.Conventions.AddPageRoute("/Modul006/AnyDirectory/FriendlyRoutesSample", "ABC/{year}/{month}/{day}/{title}");
+                });
+            #endregion
+
             //Welche Technologien werden hinzugef�gt (ASP.NET Core Feature (Session-Handling) oder drittanbieter wie DevExpress) 
-            services.AddRazorPages() //Bedeutet, wir verwenden Razor Pages + wir ben�tigen ein Pages-Verzeichnis
-                .AddRazorRuntimeCompilation(); //Wird f�r LiveMiddleware Library ben�tigt -> WestWind
+            //services.AddRazorPages() //Bedeutet, wir verwenden Razor Pages + wir ben�tigen ein Pages-Verzeichnis
+            //    .AddRazorRuntimeCompilation(); //Wird f�r LiveMiddleware Library ben�tigt -> WestWind
 
 
             //services.AddRazorPages(config => 
             //{ 
-               
+
             //});
 
             #region andere Alternativen  zu AddRazorPages
@@ -64,7 +82,8 @@ namespace Bookshop
             //Intern wird in AddDbContext AddScoped 
             services.AddDbContext<MovieDbContext>(options =>
             {
-                options.UseInMemoryDatabase("MovieDB");
+                //options.UseInMemoryDatabase("MovieDB");
+                options.UseSqlServer(Configuration.GetConnectionString("MovieDbContext"));
             });
            
         }

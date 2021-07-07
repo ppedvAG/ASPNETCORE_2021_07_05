@@ -2,14 +2,14 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using Bookshop.Models;
+using RazorPageKurs.Models;
 using DependecyInjectionSample;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Options;
 
-namespace Bookshop.Pages.Modul001
+namespace RazorPageKurs.Pages.Modul001
 {
     public class ReadConfigurationSampleModel : PageModel
     {

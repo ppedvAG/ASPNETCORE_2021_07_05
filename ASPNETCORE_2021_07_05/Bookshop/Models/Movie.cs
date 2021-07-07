@@ -33,5 +33,7 @@ namespace RazorPageKurs.Models
         //[Range(0, 99.99)] //Geht richtung UI 
         //[RegularExpression(@"^\$?\d+(\.(\d{2}))?$")]
         public decimal Price { get; set; }
+
+        public int PuplisherYear { get; set; }
     }
 }

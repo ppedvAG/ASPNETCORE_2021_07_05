@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
-namespace Bookshop.Pages.Modul002
+namespace RazorPageKurs.Pages.Modul002
 {
     public class CalcModel : PageModel
     {
