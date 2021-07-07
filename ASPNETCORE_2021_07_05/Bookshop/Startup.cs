@@ -13,6 +13,7 @@ using System.Threading.Tasks;
 using Westwind.AspNetCore.LiveReload;
 using Microsoft.EntityFrameworkCore;
 using RazorPageKurs.Data;
+using Microsoft.AspNetCore.Http;
 
 namespace RazorPageKurs
 {
@@ -28,7 +29,14 @@ namespace RazorPageKurs
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services) //IOC - Container 
         {
-            //services.AddRazorPages();
+            services.AddRazorPages();
+
+            services.Configure<CookiePolicyOptions>(options =>
+            {
+                // This lambda determines whether user consent for non-essential cookies is needed for a given request.
+                options.CheckConsentNeeded = context => true;
+                options.MinimumSameSitePolicy = SameSiteMode.None;
+            });
             #region 
             //BEISPIEL 1:
             //Page-Directory -> wird /Content Directory jetzt sein
@@ -39,11 +47,11 @@ namespace RazorPageKurs
 
 
             //BEISPIEL 2:
-            services.AddRazorPages()
-                .AddRazorPagesOptions(options =>
-                {
-                    options.Conventions.AddPageRoute("/Modul006/AnyDirectory/FriendlyRoutesSample", "ABC/{year}/{month}/{day}/{title}");
-                });
+            //services.AddRazorPages()
+            //    .AddRazorPagesOptions(options =>
+            //    {
+            //        options.Conventions.AddPageRoute("/Modul006/AnyDirectory/FriendlyRoutesSample", "ABC/{year}/{month}/{day}/{title}");
+            //    });
             #endregion
 
             //Welche Technologien werden hinzugef�gt (ASP.NET Core Feature (Session-Handling) oder drittanbieter wie DevExpress) 
@@ -78,7 +86,7 @@ namespace RazorPageKurs
             services.Configure<SampleWebSettings>(Configuration);
             //services.AddLiveReload();
 
-
+            services.AddSingleton<IHttpContextAccessor,HttpContextAccessor>();
             //Intern wird in AddDbContext AddScoped 
             services.AddDbContext<MovieDbContext>(options =>
             {
@@ -86,8 +94,14 @@ namespace RazorPageKurs
                 options.UseSqlServer(Configuration.GetConnectionString("MovieDbContext"));
             });
 
-            services.AddSession();
-           
+            services.AddSession(options =>
+            {
+                options.Cookie.HttpOnly = true;
+                options.IdleTimeout = TimeSpan.FromSeconds(60); //TimeOut
+            });
+
+            services.AddResponseCaching();
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -108,6 +122,7 @@ namespace RazorPageKurs
 
 
             //Allgmein
+            app.UseResponseCaching();
             app.UseHttpsRedirection(); //https 
             app.UseStaticFiles(); //wwwroot verzeichnis wird mitverwendet
 
@@ -115,6 +130,10 @@ namespace RazorPageKurs
 
             app.UseAuthorization();
             app.UseSession();
+            app.UseCookiePolicy();
+
+
+            //Endpoints ist die letzte Zeile Code 
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapRazorPages(); //Endpoint f�r Razor Pages -> Request findet seine RazorPage - Seite

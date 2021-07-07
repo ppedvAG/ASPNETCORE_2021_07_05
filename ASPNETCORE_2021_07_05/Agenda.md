@@ -23,6 +23,7 @@ Mittwoch:
 - [ ] Sicherheit (User Idenenty Library) (DO)
 - [ ] State Management
 - [ ] Create und Edit RazorPage all-in-one. -> .NET 6 Preview 4
+- [ ] Signal-R mit Razor Pages 
 
 ##### WebAPI (optional) 
 - [ ] Kleiner Einblick

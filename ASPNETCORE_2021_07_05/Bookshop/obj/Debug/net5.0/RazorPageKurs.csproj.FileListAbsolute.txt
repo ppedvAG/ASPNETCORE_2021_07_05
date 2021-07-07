@@ -473,3 +473,7 @@ C:\Aktueller Kurs\ASPNETCORE_2021_07_05\ASPNETCORE_2021_07_05\Bookshop\obj\Debug
 C:\Aktueller Kurs\ASPNETCORE_2021_07_05\ASPNETCORE_2021_07_05\Bookshop\obj\Debug\net5.0\Razor\Pages\Modul007\TempDataSample.cshtml.g.cs
 C:\Aktueller Kurs\ASPNETCORE_2021_07_05\ASPNETCORE_2021_07_05\Bookshop\obj\Debug\net5.0\Razor\Pages\Modul007\SessionDestination.cshtml.g.cs
 C:\Aktueller Kurs\ASPNETCORE_2021_07_05\ASPNETCORE_2021_07_05\Bookshop\obj\Debug\net5.0\Razor\Pages\Modul007\SessionSample.cshtml.g.cs
+C:\Aktueller Kurs\ASPNETCORE_2021_07_05\ASPNETCORE_2021_07_05\Bookshop\obj\Debug\net5.0\Razor\Pages\Modul007\CookieSample.cshtml.g.cs
+C:\Aktueller Kurs\ASPNETCORE_2021_07_05\ASPNETCORE_2021_07_05\Bookshop\obj\Debug\net5.0\Razor\Pages\Modul007\ResponseCacheSample.cshtml.g.cs
+C:\Aktueller Kurs\ASPNETCORE_2021_07_05\ASPNETCORE_2021_07_05\Bookshop\obj\Debug\net5.0\Razor\Pages\Modul007\ViewDataSample.cshtml.g.cs
+C:\Aktueller Kurs\ASPNETCORE_2021_07_05\ASPNETCORE_2021_07_05\Bookshop\obj\Debug\net5.0\Razor\Pages\Modul007\CacheTagSample.cshtml.g.cs
