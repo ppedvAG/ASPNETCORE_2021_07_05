@@ -1,0 +1,30 @@
+﻿@page
+@model RazorPageKurs.Pages.Modul007.TempDataDestinationModel
+
+<h3>TempDataDestination</h3>
+
+@{
+    @*
+        if (TempData["Message"] != null)
+        {
+            <h3>Message: @TempData["Message"]</h3>
+        }
+
+
+        @TempData["Message"]*@
+
+
+
+
+    if (TempData.Peek("Message") != null)
+    {
+        <h3>Message: @TempData.Peek("Message")</h3>
+
+
+
+        //Wenn kein Peek verwendet wird, wird der Eintrag Message in TempData gelöscht
+        //<h3>Message: @TempData["Message"]</h3>
+    }
+
+
+}

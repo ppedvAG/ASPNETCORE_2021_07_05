@@ -1,0 +1,11 @@
+﻿@page
+@using Microsoft.AspNetCore.Http;
+@model RazorPageKurs.Pages.Modul007.SessionDestinationModel
+@{
+    
+}
+
+
+@HttpContext.Session.GetInt32("age")
+
+@HttpContext.Session.GetString("mitarbeiterDesMonats")

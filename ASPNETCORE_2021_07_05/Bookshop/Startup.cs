@@ -85,6 +85,8 @@ namespace RazorPageKurs
                 //options.UseInMemoryDatabase("MovieDB");
                 options.UseSqlServer(Configuration.GetConnectionString("MovieDbContext"));
             });
+
+            services.AddSession();
            
         }
 
@@ -112,7 +114,7 @@ namespace RazorPageKurs
             app.UseRouting(); //Routing
 
             app.UseAuthorization();
-
+            app.UseSession();
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapRazorPages(); //Endpoint f�r Razor Pages -> Request findet seine RazorPage - Seite

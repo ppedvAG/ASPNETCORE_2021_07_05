@@ -1,0 +1,21 @@
+﻿@page
+@model RazorPageKurs.Pages.Modul007.TempDataSampleModel
+
+<h1>TempData Beispiel</h1>
+
+
+@{
+    @*if (TempData["Message"] != null)
+    {
+        <h3>Message: @TempData["Message"]</h3>
+    }
+    @TempData["Message"]
+    TempData.Keep(); // Die danach folgende Löschung des gesammten Dictionary wird unterbunden*@
+
+
+    if (TempData.Peek("Message") != null)
+    {
+        <h3>Message: @TempData.Peek("Message")</h3>
+    }
+
+}
